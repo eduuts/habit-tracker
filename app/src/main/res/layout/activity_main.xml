@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.habittrackerrunning.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="2"
+            android:id="@+id/runningLocationTF"
+            android:hint="Place of the exercise"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:lines="1"
+            android:id="@+id/distance"
+            android:hint="Lenght of the run"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Habit"
+        android:id="@+id/submitBtn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/deleteTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Habits" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/runningListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
